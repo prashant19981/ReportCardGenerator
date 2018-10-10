@@ -1,12 +1,13 @@
 package com.dd.pp.reportcardgenerator;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 
-public class signupActivity extends AppCompatActivity {
+public class signupActivity extends Activity {
 
 
 

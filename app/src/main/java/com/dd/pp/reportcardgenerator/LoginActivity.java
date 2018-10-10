@@ -3,6 +3,7 @@ package com.dd.pp.reportcardgenerator;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -349,8 +350,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         //Check the database to login the user
 
     }
-    public void signUpUser(){
-
+    public void signUpUser(View view){
+        Intent myIntent = new Intent(LoginActivity.this,
+                signupActivity.class);
+        startActivity(myIntent);
 
 
     }

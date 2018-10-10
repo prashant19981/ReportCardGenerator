@@ -19,9 +19,10 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
 
-                <AutoCompleteTextView
+                <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -56,7 +57,7 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="250dp"
                 android:layout_gravity="center"
                 android:layout_weight="4.72"
                 android:text="Sign up"
