@@ -344,5 +344,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
     }
+    public void loginUser(View view){
+
+        //Check the database to login the user
+
+    }
+    public void signUpUser(){
+        
+
+
+    }
 }
 

@@ -2,6 +2,7 @@ package com.dd.pp.reportcardgenerator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 
@@ -18,5 +19,12 @@ public class signupActivity extends AppCompatActivity {
 
         mEmailView = (EditText) findViewById(R.id.email);
         mPasswordView = (EditText) findViewById(R.id.password);
+    }
+    public void signUpButton(View view){
+
+        //ADD THE VALUE TO DATABASE
+
+
+
     }
 }
