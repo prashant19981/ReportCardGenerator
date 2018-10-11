@@ -30,21 +30,55 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="1">
-
-            <android.support.design.widget.TextInputLayout
+           <ImageView
+               android:src="@drawable/user"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="90dp"
+               />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Sign In"
+                android:textStyle="bold"/>
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_gravity="center"
+                >
 
             <AutoCompleteTextView
                 android:id="@+id/email"
-                android:layout_width="match_parent"
+                android:layout_width="220dp"
+                android:layout_centerInParent="true"
                 android:layout_height="wrap_content"
                 android:hint="Username"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:singleLine="true"/>
+                android:singleLine="true"
 
-            </android.support.design.widget.TextInputLayout>
+                />
+                <ImageView
+                   android:layout_toLeftOf="@id/email"
+                    android:layout_width="20dp"
+                    android:src="@drawable/usericon"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="14dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -52,9 +86,10 @@
 
             <EditText
                 android:id="@+id/password"
-                android:layout_width="match_parent"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:hint="Passwaord"
+                android:layout_gravity="center"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
@@ -63,17 +98,25 @@
                 android:singleLine="true"/>
 
             </android.support.design.widget.TextInputLayout>
-
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/lock"
+                    android:layout_height="25dp"
+                    android:layout_toLeftOf="@id/login"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="17dp"
+                    />
+            </RelativeLayout>
             <Button
                 android:id="@+id/email_sign_in_button"
                 style="?android:textAppearanceSmall"
-                android:layout_width="200dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="15dp"
                 android:layout_gravity="center"
                 android:layout_weight="4.72"
                 android:text="Login"
-                android:background="@android:color/holo_orange_dark"
+                android:background="@android:color/holo_blue_dark"
                 android:textStyle="bold"
                 android:onClick="loginUser"/>
             <Button
