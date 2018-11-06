@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "141060636090",
+    "firebase_url": "https://reportcardgenerator-6ae62.firebaseio.com",
+    "project_id": "reportcardgenerator-6ae62",
+    "storage_bucket": "reportcardgenerator-6ae62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141060636090:android:d40ec13c225c99e3",
+        "android_client_info": {
+          "package_name": "com.dd.pp.reportcardgenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141060636090-p4lumrc23ts3uaeuf8d1pskjhoqd6hut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dd.pp.reportcardgenerator",
+            "certificate_hash": "71ff4ddb05ce715019ec844b25aa17cdce30389c"
+          }
+        },
+        {
+          "client_id": "141060636090-k46ldl1suvjdf9b69avna9j668hi3pak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSOv0yXgIG0FyYD9Q8RKB2B2IiyLS7IUg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141060636090-k46ldl1suvjdf9b69avna9j668hi3pak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

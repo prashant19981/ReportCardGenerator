@@ -61,7 +61,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -346,7 +345,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
     public void loginUser(View view){
-
+        attemptLogin();
         //Check the database to login the user
 
     }
