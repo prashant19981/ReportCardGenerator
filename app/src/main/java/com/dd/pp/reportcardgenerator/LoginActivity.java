@@ -37,7 +37,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,10 +66,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     // UI references.
+
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+
     private static final String TAG = "LoginActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -197,11 +198,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
-        } else if (!isEmailValid(email,password)) {
+        } /*else if (!isEmailValid(email,password)) {
             mEmailView.setError("Invalid login credentials");
             focusView = mEmailView;
             cancel = true;
-        }
+        }*/
 
         if (cancel) {
             // There was an error; don't attempt login and focus the first
@@ -216,6 +217,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
     private boolean isEmailValid(String email, String password) {
+
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -226,7 +228,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
-                           
+
                         }
 
                         // ...
