@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dd.pp.reportcardgenerator.DisplayData">
+    android:orientation="vertical"
+    tools:context="com.dd.pp.reportcardgenerator.DisplayData"
+    android:weightSum="1">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/registration_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteY="79dp"
+        tools:layout_editor_absoluteX="6dp"
+        android:layout_weight="0.05" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+      </ListView>
+</LinearLayout>

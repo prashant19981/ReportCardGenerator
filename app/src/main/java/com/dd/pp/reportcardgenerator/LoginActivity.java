@@ -226,8 +226,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                                 // If sign in fails, display a message to the user.
 
                                 Toast.makeText(LoginActivity.this,"SIGN IN SUCCESSFUL",Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(LoginActivity.this,DisplayData.class);
-                                startActivity(intent);
+                              displayData();
                                // Toast.makeText(EmailPasswordActivity.this, "Authentication failed.",
                                      //   Toast.LENGTH_SHORT).show();
                                // updateUI(null);
@@ -432,6 +431,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 signupActivity.class);
         startActivity(myIntent);
 
+
+    }
+    public void displayData(){
+
+        Intent intent = new Intent(LoginActivity.this,DisplayData.class);
+        startActivity(intent);
 
     }
 }
